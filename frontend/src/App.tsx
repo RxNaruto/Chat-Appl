@@ -5,7 +5,7 @@ function App() {
   const [messages, setMessages] = useState<string[]>([]);
   const [sendMessage, setSendMessage] = useState("");
   useEffect(() => {
-    const newSocket = new WebSocket("ws://realtimechat.rithktechnologies.xyz");
+    const newSocket = new WebSocket("wss://realtimechat.rithktechnologies.xyz");
     newSocket.onopen = () => {
       console.log("Connection Estabilished");
     };
